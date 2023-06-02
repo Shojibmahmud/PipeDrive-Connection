@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create a Job</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<form id="job-form">
+			<h1>Create a Job</h1>
+
+			<div id="customer-details">
+				<h2>Customer Details</h2>
+				<div>
+					<label for="first-name">First Name:</label>
+					<input type="text" id="first-name" name="first-name" />
+					<br />
+					<label for="last-name">Last Name:</label>
+					<input type="text" id="last-name" name="last-name" />
+					<br />
+					<label for="phone">Phone:</label>
+					<input type="text" id="phone" name="phone" />
+					<br />
+					<label for="email">Email:</label>
+					<input type="text" id="email" name="email" />
+					<span class="warning"></span>
+				</div>
+			</div>
+
+			<div id="job-details">
+				<h2>Job Details</h2>
+				<div>
+					<label for="job-type">Job Type:</label>
+					<select id="job-type" name="job-type">
+						<option></option>
+						<option value="Intern">Intern</option>
+						<option value="Junior Developer">Junior Developer</option>
+						<option value="Senior Developer">Senior Developer</option>
+					</select>
+					<br />
+					<label for="job-source">Job Source:</label>
+					<select id="job-source" name="job-source">
+						<option value="Source 1">Source 1</option>
+						<option value="Source 2">Source 2</option>
+						<option value="Source 3">Source 3</option>
+					</select>
+					<br />
+					<label for="job-description">Job Description:</label>
+					<textarea id="job-description" name="job-description"></textarea>
+					<span class="warning"></span>
+				</div>
+			</div>
+
+			<div id="service-location">
+				<h2>Service Location</h2>
+				<div>
+					<label for="address">Address:</label>
+					<input type="text" id="address" name="address" />
+					<br />
+					<label for="city">City:</label>
+					<input type="text" id="city" name="city" />
+					<br />
+					<label for="state">State:</label>
+					<input type="text" id="state" name="state" />
+					<br />
+					<label for="zip-code">Zip Code:</label>
+					<input type="text" id="zip-code" name="zip-code" />
+					<br />
+					<label for="area">Area:</label>
+					<select id="area" name="area">
+						<option value="Area 1">Area 1</option>
+						<option value="Area 2">Area 2</option>
+						<option value="Area 3">Area 3</option>
+					</select>
+					<span class="warning"></span>
+				</div>
+			</div>
+
+			<div id="schedule">
+				<h2>Schedule</h2>
+				<div>
+					<label for="start-date">Start Date:</label>
+					<input type="date" id="start-date" name="start-date" />
+					<br />
+					<label for="start-time">Start Time:</label>
+					<input type="time" id="start-time" name="start-time" />
+					<br />
+					<label for="end-time">End Time:</label>
+					<input type="time" id="end-time" name="end-time" />
+					<br />
+					<label for="test-select">Test Select:</label>
+					<select id="test-select" name="test-select">
+						<option value="Option 1">Option 1</option>
+						<option value="Option 2">Option 2</option>
+						<option value="Option 3">Option 3</option>
+					</select>
+					<span class="warning"></span>
+				</div>
+			</div>
+
+			<br />
+			<button type="button" onclick="createJob()">Save</button>
+			<button type="button" onclick="clearForm()">Clear</button>
+
+			<script src="PipedriveInput.js"></script>
+		</form>
+	</body>
+</html>
